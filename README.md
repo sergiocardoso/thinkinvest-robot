@@ -23,6 +23,9 @@ animation.setSpeed(1.23);
 Arquivo: **robo-abertura.json**
 Animação de início com a apresentação e explicação para o usuário
 
+Arquivo: **robo-pre-loop.json**
+Animação de transformação do robo no logo em loop
+
 Arquivo: **robo-loop.json**
 Animação de início com a apresentação e explicação para o usuário
 
