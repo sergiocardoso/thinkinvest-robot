@@ -17,8 +17,9 @@
 
     <div class="container h-100">
         <div class="row justify-content-center align-items-center h-100">
-            <div id="animation-start" class="col-4"></div>
-            <div id="animation-loop" class="col-4"></div>
+            <div id="animation-start" class="col-3"></div>
+            <div id="animation-pre" class="col-3"></div>
+            <div id="animation-loop" class="col-3"></div>
         </div>
     </div>
 
@@ -26,7 +27,7 @@
     <script>
         let animation = lottie.loadAnimation({
             container: document.getElementById(
-            'animation-start'), // the dom element that will contain the animation
+                'animation-start'), // the dom element that will contain the animation
             renderer: 'svg',
             loop: true,
             autoplay: true,
@@ -36,7 +37,7 @@
 
         let loop = lottie.loadAnimation({
             container: document.getElementById(
-            'animation-loop'), // the dom element that will contain the animation
+                'animation-loop'), // the dom element that will contain the animation
             renderer: 'svg',
             loop: true,
             autoplay: true,
@@ -44,6 +45,17 @@
         });
 
         loop.setSpeed(1.2);
+
+        let pre = lottie.loadAnimation({
+            container: document.getElementById(
+                'animation-pre'), // the dom element that will contain the animation
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'robo-pre-loop.json' // the path to the animation json
+        });
+
+        pre.setSpeed(1.2);
     </script>
 </body>
 
