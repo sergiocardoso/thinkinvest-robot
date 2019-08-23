@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Animation Start</title>
+</head>
+
+<body class="h-100">
+
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div id="animation-start" class="col-4"></div>
+            <div id="animation-loop" class="col-4"></div>
+        </div>
+    </div>
+
+    <script src="./lottie.js"></script>
+    <script>
+        let animation = lottie.loadAnimation({
+            container: document.getElementById(
+            'animation-start'), // the dom element that will contain the animation
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'robo-abertura.json' // the path to the animation json
+        });
+        animation.setSpeed(1.23);
+
+        let loop = lottie.loadAnimation({
+            container: document.getElementById(
+            'animation-loop'), // the dom element that will contain the animation
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'robo-loop.json' // the path to the animation json
+        });
+
+        loop.setSpeed(1.2);
+    </script>
+</body>
+
+</html>
